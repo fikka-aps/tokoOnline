@@ -1,0 +1,30 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['default_controller'] = 'Auth';
+$route['404_override'] = '';
+$route['detail/(:any)'] = 'User/detail/$1';
+$route['login'] = 'Auth/login';
+$route['registrasi'] = 'Auth/registrasi';
+$route['logout'] = 'Auth/logout';
+$route['admin'] = 'Admin';
+$route['produk'] = 'Admin';
+$route['menunggu_pembayaran'] = 'Admin/menunggu_pembayaran';
+$route['konfirmasi_pembayaran'] = 'Admin/konfirmasi_pembayaran';
+$route['bayar/(:any)'] = 'Admin/bayar/$1';
+$route['diterima/(:any)'] = 'User/diterima/$1';
+$route['resi'] = 'Admin/resi';
+$route['pesanan_selesai'] = 'Admin/pesanan_selesai';
+$route['pesanan'] = 'User/pesanan';
+$route['produk_search'] = 'User/produk_search';
+$route['pengiriman'] = 'Admin/pengiriman';
+$route['dikirim'] = 'Admin/dikirim';
+$route['editProduk'] = 'Admin/editProduk';
+$route['addProduk'] = 'Admin/addProduk';
+$route['bayarProduk'] = 'User/bayarProduk';
+$route['beliProduk'] = 'User/beliProduk';
+$route['buktiBayar'] = 'User/buktiBayar';
+$route['deleteProduk/(:any)'] = 'Admin/deleteProduk/$1';
+$route['home'] = 'User/home';
+$route['detail'] = 'User/detail';
+$route['translate_uri_dashes'] = FALSE;
